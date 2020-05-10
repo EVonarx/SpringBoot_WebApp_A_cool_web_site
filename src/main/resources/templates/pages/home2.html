@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http//:www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Home2</title>
+</head>
+<body>
+ <h1 th:text="'Hello ' + ${key} + ' !...from this dynamic thymeleaf template '">Hello Eric !</h1> <!-- When you open this file directly in  browser you get Hello  Eric ! => it is thought for the designers -->
+<h1> Put "uri:8080/home2?name=NameOfThePerson" in the request  (NameOfThePerson is the name of the person you want to say Hello) </h1>
+ <h1 style="color:green">To visit my IT blog, click <a href="https://itericvonarx.wordpress.com/">here</a></h1>
+<!-- 
+notice: you can add thymeleaf methods.... 
+for example if you want to have the first letter of the name capitalized..
+${#strings.capitalise(key)}
+-->
+</body>
+</html>
